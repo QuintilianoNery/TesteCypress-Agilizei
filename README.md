@@ -66,11 +66,14 @@ O conteúdo dos vídeos é organizado por branches, conforme a lista abaixo:
   - depois `npm install`
   - depois `npm start`
 
+  Obs: essa pasta deve estar junto da pasta do projeto do cypress
+
 2.Acessar o diretório frontend, instalar as dependências e iniciar o site:
   - `cd frontend`
   - depois `npm install`
   - depois `npm start`
-
+  
+Obs: essa pasta deve estar junto da pasta do projeto do cypress
 #### Instale e abra o Cypress
 3.Acessar o diretório root do projeto (que tem a pasta Cypress), instalar as dependências e abrir o Cypress Runner:
   - `npm install`
