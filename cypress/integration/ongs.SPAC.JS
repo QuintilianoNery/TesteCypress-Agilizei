@@ -82,5 +82,14 @@ describe('Ongs', ()=>{
 
 
     });
+    //que ongs  podem fazer logout
+    //que ongs  podem cadastrar novos casos
+    //que ongs  podem ecluir um caso
+
+    it('Ongs que  poder fazer logout', () => {
+        cy.visit('http://localhost:3000/');
+    });
+
+
 
 })
