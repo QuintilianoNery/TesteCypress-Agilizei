@@ -22,9 +22,9 @@ import './commands'
 // ***********************************************************
 
 //coisas para semre executadas antes de cada teste
-before(() => {
-    //cy.server - para route e request sempre obrigatório
-    cy.server();
-    //Esse comando personalizado foi criado no arquivo commands.js
-    cy.createOng();
+beforeEach(() => {
+        //cy.server - para route e request sempre obrigatório
+        cy.server();
+        //Esse comando personalizado foi criado no arquivo commands.js
+        cy.createOng();
 });

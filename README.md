@@ -1,2 +1,2 @@
 #Iniciar o Cypress
-npm run cypress:open
+npm run cy:open

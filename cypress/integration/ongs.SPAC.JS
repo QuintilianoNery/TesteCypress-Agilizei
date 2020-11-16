@@ -2,15 +2,16 @@
 
 describe('Ongs', ()=>{
     //it.skip é para pular o teste quando o mesmo está pronto
-    it('Realizar um cadastro', ()=> {
+    it.skip('Realizar um cadastro', ()=> {
         //cy.visit - visita uma página
         //cy.get - busca um elemento
         //cy.type - insere um texto
 
         //Aplicação usada
         //https://confident-kare-1f5021.netlify.app/   
+        //http://localhost:3000/
         //login direto na página, pois teste não deve depender do outro    
-        cy.visit('https://confident-kare-1f5021.netlify.app')
+        cy.visit('http://localhost:3000/')
 
         //clicar não tenho cadastro
         cy.get('.back-link').click()
@@ -18,7 +19,7 @@ describe('Ongs', ()=>{
         //campos do cadastro
         cy.get('[placeholder="Nome da ONG"]').type('Cypress')
         cy.get('[type="email"]').type('cypress@cy.com.br')
-        cy.get('[placeholder="Whatsapp"]').type('22222222222')
+        cy.get('[placeholder="WhatsApp"]').type('28999999999')
         cy.get('[placeholder="Cidade"]').type('Castelo')
         cy.get('[placeholder="UF"]').type('ES')
 
@@ -48,48 +49,58 @@ describe('Ongs', ()=>{
         })
     });
 
-        //Sempre essa requisição de cadastro para retornar ID deve ser criada sempre antes fazer o login
-        //Para garantir que o ID da ong vai ser criada antes de fazer outro teste, vamos colocar um comando before no /suporte/index.js
-        //não preciso mais do coando comentado
-        /* cy.request({
-            method: 'POST',
-            url: 'https://omnistack-be-the-hero.herokuapp.com/ongs',
-            body: {
-                city: "Irupi",
-                email: "animais@mail.com",
-                name: "Animais",
-                uf: "ES",
-                whatsapp: "2822222222"
-            }
-        }).then(response =>{
-            expect(response.body.id).is.not.null;
-            cy.log(response.body.id);
-            
-            //salvar a propriedade, que cria uma variavel de ambiente temporária 
-            Cypress.env('createdOngId', response.body.id);
-            
-        });
- */
-
-    it('Realizar login no sistema', () => {
+        //Ver support/commands.js
+    it.skip('Realizar login no sistema', () => {
         //Acessando a aplicação 
    /*      const createOngId = Cypress.env('createdOngId');
         cy.log(createOngId); */
 
-        cy.visit('https://confident-kare-1f5021.netlify.app');
+        cy.visit('http://localhost:3000/');
         cy.get('input').type(Cypress.env('createdOngId'));
         cy.get('.button').click();
 
 
     });
+    
     //que ongs  podem fazer logout
     //que ongs  podem cadastrar novos casos
-    //que ongs  podem ecluir um caso
+    //que ongs  podem excluir um caso
+    //667e17ef
 
-    it('Ongs que  poder fazer logout', () => {
-        cy.visit('http://localhost:3000/');
+    it.skip('Poder fazer logout', () => {
+        //ver /support/commands.js
+        cy.login();
+        cy.get('button').click();
+    });
+  
+    it('Poder cadastrar novos casos', () => {
+        cy.login();
+
+        cy.get('.button').click();
+
+        cy.get('[placeholder="Título do caso"]').type('Animal abandonado.');
+        cy.get('textarea').type('Animal jogado na rua, precisa ser adotado.');
+        cy.get('[placeholder="Valor em reais"]').type(100);
+        
+        //POST 200 /incidents
+        cy.route('POST', '**/incidents').as('newIncidents');
+        
+        cy.get('.button').click();
+
+        cy.wait('@newIncidents').then((xhr) => {
+            expect(xhr.status).to.eq(200);
+            expect(xhr.response.body).has.property('id');
+            expect(xhr.response.body.id).is.not.null;
+        })
+
     });
 
+    it('Poder excluir um caso', () => {
+        cy.createNewIncident();
+        cy.login();
 
+        //parei na parte do clique no botão de excluir 38:42/52:12
+        //cy.get('li > button > svg');
+    });
 
 })
