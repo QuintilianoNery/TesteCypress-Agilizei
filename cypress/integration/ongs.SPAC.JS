@@ -73,7 +73,7 @@ describe('Ongs', ()=>{
         cy.get('button').click();
     });
   
-    it('Poder cadastrar novos casos', () => {
+    it.skip('Poder cadastrar novos casos', () => {
         cy.login();
 
         cy.get('.button').click();
@@ -95,12 +95,21 @@ describe('Ongs', ()=>{
 
     });
 
+
+   //31:11 ver onde parei 
     it('Poder excluir um caso', () => {
         cy.createNewIncident();
         cy.login();
 
-        //parei na parte do clique no botão de excluir 38:42/52:12
-        //cy.get('li > button > svg');
+        // delete 204 http://localhost:3333/incidents/71
+        cy.route('DELETE', '**/incidents/*').as('deleteIncidents');
+
+        cy.get('li > button > svg').click();
+
+        cy.wait('@deleteIncidents').then((xhr) => {
+            expect(xhr.status).to.eq(204);
+            expect(xhr.response.body).to.be.empty;
+        })
     });
 
 })

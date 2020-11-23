@@ -55,7 +55,7 @@ Cypress.Commands.add('createNewIncident', () =>{
         url:'http://localhost:3333/incidents',
         headers: {'Authorization': '${ Cypress.env(createdOngId)}',},
         body: {
-            title: "Animal abandonado",
+            title: "Animal Faminto",
             description: "Animal jogado na rua, precisa ser adotado.",
             value: "100"
         }

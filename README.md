@@ -81,3 +81,7 @@ Obs: essa pasta deve estar junto da pasta do projeto do cypress
 
   #### Iniciar o Cypress
 npm run cy:open
+
+####
+Link da aplicação
+https://teste-cypress-agilizei.vercel.app/
