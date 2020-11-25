@@ -48,6 +48,8 @@ Cypress.Commands.add("createOng", () =>{
     });
 }) 
 
+//-----------------------------------------------------------------------------
+
 Cypress.Commands.add('createNewIncident', () =>{
     
     cy.request({
@@ -67,6 +69,8 @@ Cypress.Commands.add('createNewIncident', () =>{
         Cypress.env('createdIncidentId', response.body.id);
     })
 })
+
+//-----------------------------------------------------------------------------
 
 Cypress.Commands.add('login',() => {
     //##Muito importante para usar no cadastro do Geoserviços que tem muitas páginas

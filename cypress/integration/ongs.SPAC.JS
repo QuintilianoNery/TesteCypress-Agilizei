@@ -1,4 +1,5 @@
 ///  <reference types = "Cypress" />
+//Aula 01
 
 describe('Ongs', ()=>{
     //it.skip é para pular o teste quando o mesmo está pronto
@@ -49,6 +50,8 @@ describe('Ongs', ()=>{
         })
     });
 
+    //-----------------------------------------------------------------------------
+
         //Ver support/commands.js
     it.skip('Realizar login no sistema', () => {
         //Acessando a aplicação 
@@ -62,21 +65,29 @@ describe('Ongs', ()=>{
 
     });
     
+    //-----------------------------------------------------------------------------
+        
+    //Aula 2
     //que ongs  podem fazer logout
     //que ongs  podem cadastrar novos casos
     //que ongs  podem excluir um caso
     //667e17ef
-
+    
     it.skip('Poder fazer logout', () => {
         //ver /support/commands.js
         cy.login();
         cy.get('button').click();
     });
   
-    it.skip('Poder cadastrar novos casos', () => {
+    //-----------------------------------------------------------------------------
+
+   //20:58
+
+
+    it('Poder cadastrar novos casos', () => {
         cy.login();
 
-        cy.get('.button').click();
+        //cy.get('.button').click();
 
         cy.get('[placeholder="Título do caso"]').type('Animal abandonado.');
         cy.get('textarea').type('Animal jogado na rua, precisa ser adotado.');
@@ -95,8 +106,8 @@ describe('Ongs', ()=>{
 
     });
 
+    //-----------------------------------------------------------------------------
 
-   //31:11 ver onde parei 
     it('Poder excluir um caso', () => {
         cy.createNewIncident();
         cy.login();
