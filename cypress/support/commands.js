@@ -53,9 +53,9 @@ Cypress.Commands.add("createOng", () =>{
 Cypress.Commands.add('createNewIncident', () =>{
     
     cy.request({
-        method:'POST',
-        url:'http://localhost:3333/incidents',
-        headers: {'Authorization': '${ Cypress.env(createdOngId)}',},
+        method: 'POST',
+        url: 'http://localhost:3333/incidents',
+        headers: {'Authorization': `${ Cypress.env('createdOngId')}`, },
         body: {
             title: "Animal Faminto",
             description: "Animal jogado na rua, precisa ser adotado.",
@@ -68,6 +68,7 @@ Cypress.Commands.add('createNewIncident', () =>{
 
         Cypress.env('createdIncidentId', response.body.id);
     })
+    
 })
 
 //-----------------------------------------------------------------------------

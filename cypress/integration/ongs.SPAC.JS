@@ -3,7 +3,7 @@
 
 describe('Ongs', ()=>{
     //it.skip é para pular o teste quando o mesmo está pronto
-    it.skip('Realizar um cadastro', ()=> {
+    it('Realizar um cadastro', ()=> {
         //cy.visit - visita uma página
         //cy.get - busca um elemento
         //cy.type - insere um texto
@@ -53,7 +53,7 @@ describe('Ongs', ()=>{
     //-----------------------------------------------------------------------------
 
         //Ver support/commands.js
-    it.skip('Realizar login no sistema', () => {
+    it('Realizar login no sistema', () => {
         //Acessando a aplicação 
    /*      const createOngId = Cypress.env('createdOngId');
         cy.log(createOngId); */
@@ -73,7 +73,7 @@ describe('Ongs', ()=>{
     //que ongs  podem excluir um caso
     //667e17ef
     
-    it.skip('Poder fazer logout', () => {
+    it('Poder fazer logout', () => {
         //ver /support/commands.js
         cy.login();
         cy.get('button').click();
@@ -87,18 +87,18 @@ describe('Ongs', ()=>{
     it('Poder cadastrar novos casos', () => {
         cy.login();
 
-        //cy.get('.button').click();
+        cy.get('.button').click();
 
         cy.get('[placeholder="Título do caso"]').type('Animal abandonado.');
         cy.get('textarea').type('Animal jogado na rua, precisa ser adotado.');
         cy.get('[placeholder="Valor em reais"]').type(100);
         
-        //POST 200 /incidents
-        cy.route('POST', '**/incidents').as('newIncidents');
+        //POST 200 /incidents  // TIRAR O S DO  newIncident
+        cy.route('POST', '**/incidents').as('newIncident');
         
         cy.get('.button').click();
 
-        cy.wait('@newIncidents').then((xhr) => {
+        cy.wait('@newIncident').then((xhr) => {
             expect(xhr.status).to.eq(200);
             expect(xhr.response.body).has.property('id');
             expect(xhr.response.body.id).is.not.null;
