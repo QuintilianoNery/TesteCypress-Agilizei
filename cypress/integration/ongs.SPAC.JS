@@ -18,11 +18,11 @@ describe('Ongs', ()=>{
         cy.get('.back-link').click()
 
         //campos do cadastro
-        cy.get('[placeholder="Nome da ONG"]').type('Cypress')
-        cy.get('[type="email"]').type('cypress@cy.com.br')
-        cy.get('[placeholder="WhatsApp"]').type('28999999999')
-        cy.get('[placeholder="Cidade"]').type('Castelo')
-        cy.get('[placeholder="UF"]').type('ES')
+        cy.get('[data-cy=name]').type('Cypress')
+        cy.get('[data-cy=e-mail]').type('cypress@cy.com.br')
+        cy.get('[data-cy=whatsapp]').type('28999999999')
+        cy.get('[data-cy=cidade]').type('Castelo')
+        cy.get('[data-cy=uf]').type('ES')
 
 
         //fazer uma acerção
@@ -39,7 +39,7 @@ describe('Ongs', ()=>{
         cy.route('POST', '**/ongs').as('postOng');
 
         //Clica no botão de cadastrar
-        cy.get('.button').click()
+        cy.get('[data-cy=button-register]').click()
 
         //utilizar a roque que foi salva para fazer uma acerção
         cy.wait('@postOng').then((xhr) => {
@@ -50,8 +50,6 @@ describe('Ongs', ()=>{
         })
     });
 
-    //-----------------------------------------------------------------------------
-
         //Ver support/commands.js
     it('Realizar login no sistema', () => {
         //Acessando a aplicação 
@@ -60,29 +58,13 @@ describe('Ongs', ()=>{
 
         cy.visit('http://localhost:3000/');
         cy.get('input').type(Cypress.env('createdOngId'));
-        cy.get('.button').click();
-
-
+        cy.get('[data-cy=button-entrar]').click();
     });
-    
-    //-----------------------------------------------------------------------------
-        
-    //Aula 2
-    //que ongs  podem fazer logout
-    //que ongs  podem cadastrar novos casos
-    //que ongs  podem excluir um caso
-    //667e17ef
-    
+
     it('Poder fazer logout', () => {
-        //ver /support/commands.js
         cy.login();
         cy.get('button').click();
     });
-  
-    //-----------------------------------------------------------------------------
-
-   //20:58
-
 
     it('Poder cadastrar novos casos', () => {
         cy.login();
@@ -92,7 +74,7 @@ describe('Ongs', ()=>{
         cy.get('[placeholder="Título do caso"]').type('Animal abandonado.');
         cy.get('textarea').type('Animal jogado na rua, precisa ser adotado.');
         cy.get('[placeholder="Valor em reais"]').type(100);
-        
+
         //POST 200 /incidents  // TIRAR O S DO  newIncident
         cy.route('POST', '**/incidents').as('newIncident');
         
@@ -105,8 +87,6 @@ describe('Ongs', ()=>{
         })
 
     });
-
-    //-----------------------------------------------------------------------------
 
     it('Poder excluir um caso', () => {
         cy.createNewIncident();
@@ -124,3 +104,7 @@ describe('Ongs', ()=>{
     });
 
 })
+
+//Sempre que tiver acesso ao código fonte da aplicação, se possível adicionar, esta é uma boa prática
+//data-cy="name"
+//serve para identificar como uma chave especifica para o nome do campo, uma variável global para identificar o campo para o Cypres

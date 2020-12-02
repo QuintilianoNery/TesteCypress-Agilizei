@@ -45,7 +45,7 @@ export default function Logon() {
             onChange={e => setId(e.target.value)}
           />
 
-          <button className="button" type="submit" >Entrar</button>
+          <button data-cy="button-entrar" className="button" type="submit" >Entrar</button>
 
           <Link className="back-link" to="/register">
               <FiLogIn size={16} color="#E02041" />

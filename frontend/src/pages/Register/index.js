@@ -60,34 +60,40 @@ async  function handleRegister(e) {
             placeholder="Nome da ONG"
             value={name}
             onChange={e => setName(e.target.value)}
+            data-cy="name"
           />
           <input
             type="email"
             placeholder="E-mail"
             value={email}
             onChange={e => setEmail(e.target.value)}
+            data-cy="e-mail"
           />
           <input
             placeholder="WhatsApp"
             value={whatsapp}
             onChange={e => setWhatsapp(e.target.value)}
+            data-cy="whatsapp"
           />
 
           <div className="input-group" >
             <input
               placeholder="Cidade"
+              data-cy="cidade"
               value={city}
               onChange={e => setCity(e.target.value)}
             />
             <input
               placeholder="UF"
+              data-cy="uf"
               style={{ width: 80  }}
               value={uf}
               onChange={e => setUf(e.target.value)}
             />
           </div>
 
-          <button className="button" type="submit" >Cadastrar</button>
+          <button data-cy="button-register" className="button" type="submit" >Cadastrar</button>
+          
 
         </form>
       </div>
