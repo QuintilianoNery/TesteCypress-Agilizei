@@ -63,22 +63,21 @@ describe('Ongs', ()=>{
 
     it('Poder fazer logout', () => {
         cy.login();
-        cy.get('button').click();
+        cy.get('[data-cy=button-sair]').click();
     });
 
     it('Poder cadastrar novos casos', () => {
         cy.login();
 
-        cy.get('.button').click();
-
-        cy.get('[placeholder="Título do caso"]').type('Animal abandonado.');
-        cy.get('textarea').type('Animal jogado na rua, precisa ser adotado.');
-        cy.get('[placeholder="Valor em reais"]').type(100);
+        cy.get('[data-cy=button-novo-caso]').click();
+        cy.get('[data-cy=titulo-do-caso]').type('Animal abandonado.');
+        cy.get('[data-cy=descricao]').type('Animal jogado na rua, precisa ser adotado.');
+        cy.get('[data-cy=valor-em-reais]').type(100);
 
         //POST 200 /incidents  // TIRAR O S DO  newIncident
         cy.route('POST', '**/incidents').as('newIncident');
         
-        cy.get('.button').click();
+        cy.get('[data-cy=button-cadastrar]').click();
 
         cy.wait('@newIncident').then((xhr) => {
             expect(xhr.status).to.eq(200);
