@@ -52,37 +52,12 @@ describe('Ongs', ()=>{
         })
     });
 
-
-
-
-
-
-
-        //Ver support/commands.js
-        //Pagina -> acoes + elementos
     it.only('Realizar login no sistema', () => {
-        //Acessando a aplicação 
-   /*      const createOngId = Cypress.env('createdOngId');
-        cy.log(createOngId); */
-/*         cy.visit('http://localhost:3000/');
-        cy.get('input').type(Cypress.env('createdOngId'));
-        cy.get('[data-cy=button-entrar]').click(); */
-
-
-
-        //Elementos
-        //id, button-entrar
         Logon.acessarLogin();
         Logon.preencherLogin();
-
     });
 
-
-
-
-
-
-
+    //###### Aula 03 parei em 23:14 finalizando a organização de Login
 
 
     it('Poder fazer logout', () => {
