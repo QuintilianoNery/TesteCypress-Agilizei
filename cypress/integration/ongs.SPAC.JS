@@ -1,4 +1,6 @@
 ///  <reference types = "Cypress" />
+//Importar methodos
+import Logon from '../support/Pages/Logon';
 //Aula 01
 
 describe('Ongs', ()=>{
@@ -50,16 +52,38 @@ describe('Ongs', ()=>{
         })
     });
 
+
+
+
+
+
+
         //Ver support/commands.js
-    it('Realizar login no sistema', () => {
+        //Pagina -> acoes + elementos
+    it.only('Realizar login no sistema', () => {
         //Acessando a aplicação 
    /*      const createOngId = Cypress.env('createdOngId');
         cy.log(createOngId); */
-
-        cy.visit('http://localhost:3000/');
+/*         cy.visit('http://localhost:3000/');
         cy.get('input').type(Cypress.env('createdOngId'));
-        cy.get('[data-cy=button-entrar]').click();
+        cy.get('[data-cy=button-entrar]').click(); */
+
+
+
+        //Elementos
+        //id, button-entrar
+        Logon.acessarLogin();
+        Logon.preencherLogin();
+
     });
+
+
+
+
+
+
+
+
 
     it('Poder fazer logout', () => {
         cy.login();
@@ -107,3 +131,12 @@ describe('Ongs', ()=>{
 //Sempre que tiver acesso ao código fonte da aplicação, se possível adicionar, esta é uma boa prática
 //data-cy="name"
 //serve para identificar como uma chave especifica para o nome do campo, uma variável global para identificar o campo para o Cypres
+
+
+
+//Aula 3 - Page Objects
+//Pagina 
+//  ações
+//  elementos
+
+//Teste de login
