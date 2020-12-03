@@ -92,7 +92,7 @@ async  function handleRegister(e) {
             />
           </div>
 
-          <button data-cy="button-register" className="button" type="submit" >Cadastrar</button>
+          <button data-cy="submit" className="button" type="submit" >Cadastrar</button>
           
 
         </form>

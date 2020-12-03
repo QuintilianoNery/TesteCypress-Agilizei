@@ -1,64 +1,24 @@
 ///  <reference types = "Cypress" />
 //Importar methodos
 import Logon from '../support/Pages/Logon';
-//Aula 01
+import Register from '../support/Register';
 
+//realizar cadastro
 describe('Ongs', ()=>{
     //it.skip é para pular o teste quando o mesmo está pronto
-    it('Realizar um cadastro', ()=> {
-        //cy.visit - visita uma página
-        //cy.get - busca um elemento
-        //cy.type - insere um texto
-
-        //Aplicação usada
-        //https://confident-kare-1f5021.netlify.app/   
-        //http://localhost:3000/
-        //login direto na página, pois teste não deve depender do outro    
-        cy.visit('http://localhost:3000/')
-
-        //clicar não tenho cadastro
-        cy.get('.back-link').click()
-
-        //campos do cadastro
-        cy.get('[data-cy=name]').type('Cypress')
-        cy.get('[data-cy=e-mail]').type('cypress@cy.com.br')
-        cy.get('[data-cy=whatsapp]').type('28999999999')
-        cy.get('[data-cy=cidade]').type('Castelo')
-        cy.get('[data-cy=uf]').type('ES')
-
-
-        //fazer uma acerção
-        //Fazer uma acerção na requisição de cadastro POST  e garantir que sempre  vai retornar um 200
-        //routing - Escutar onde a aplicação está se conexão está se conectando 
-
-        //routing
-        //start server com cy.server()
-        //criar uma rota com cy.route()
-        //atribuir a rota para um alias
-        //esperar com cy.wit e fazer uma validação
-
-        //Para monitorar, devemos passar o Cy.server e o CY.route antes da ação de clique de cadastro, pois após o clique não é possível monitorar.
-        cy.route('POST', '**/ongs').as('postOng');
-
-        //Clica no botão de cadastrar
-        cy.get('[data-cy=button-register]').click()
-
-        //utilizar a roque que foi salva para fazer uma acerção
-        cy.wait('@postOng').then((xhr) => {
-            expect(xhr.status).be.eq(200);
-            expect(xhr.response.body).has.property('id')
-            expect(xhr.response.body.id).is.not.null;
-
-        })
+    it.only('Realizar um cadastro', ()=> {
+        Register.acessarCadastro();
+        Register.preencherCadastro();
+        Register.validarCadastroDeOngComSucesso();
     });
 
-    it.only('Realizar login no sistema', () => {
+    //################ parei em 30:31
+
+    //teste de login
+    it('Realizar login no sistema', () => {
         Logon.acessarLogin();
         Logon.preencherLogin();
     });
-
-    //###### Aula 03 parei em 23:14 finalizando a organização de Login
-
 
     it('Poder fazer logout', () => {
         cy.login();
