@@ -94,7 +94,7 @@ describe('Ongs', ()=>{
         // delete 204 http://localhost:3333/incidents/71
         cy.route('DELETE', '**/incidents/*').as('deleteIncidents');
 
-        cy.get('li > button > svg').click();
+        cy.get('[data-cy=button-deletar-caso]').click();
 
         cy.wait('@deleteIncidents').then((xhr) => {
             expect(xhr.status).to.eq(204);
