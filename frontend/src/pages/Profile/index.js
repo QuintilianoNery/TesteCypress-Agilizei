@@ -50,8 +50,8 @@ export default function Profile() {
         <img src={logoImg} alt="Be The Hero" />
         <span>Bem vinda, { ongName }</span>
 
-        <Link data-cy="button-novo-caso" className="button" to="/incidents/new">Cadastrar novo caso</Link>
-        <button data-cy="button-sair" onClick={handleLogout} type="button" >
+        <Link data-cy="buttonNovoCaso" className="button" to="/incidents/new">Cadastrar novo caso</Link>
+        <button data-cy="buttonSair" onClick={handleLogout} type="button" >
           <FiPower size={18} color="#E0" />
         </button>
       </header>
@@ -70,7 +70,7 @@ export default function Profile() {
             <strong>VALOR:</strong>
             <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
-            <button data-cy="button-deletar-caso" onClick={() => handleDeleteIncident(incident.id)} type="button">
+            <button data-cy="buttonDeletarCaso" onClick={() => handleDeleteIncident(incident.id)} type="button">
               <FiTrash2 size={20} color="#a8a8b3" />
             </button>
           </li>

@@ -1,42 +1,42 @@
 ///  <reference types = "Cypress" />
-//Importar methodos
+//Importar metodos
 import Logon from '../support/Pages/Logon';
 import Register from '../support/Register';
 
-//realizar cadastro
+//Teste realizar cadastro de nova Ong
 describe('Ongs', ()=>{
     //it.skip é para pular o teste quando o mesmo está pronto
-    it.only('Realizar um cadastro', ()=> {
+    it('Realizar um cadastro', ()=> {
         Register.acessarCadastro();
         Register.preencherCadastro();
         Register.validarCadastroDeOngComSucesso();
     });
 
-    //################ parei em 30:31
-
-    //teste de login
+    //Teste realizar login
     it('Realizar login no sistema', () => {
         Logon.acessarLogin();
         Logon.preencherLogin();
     });
 
+    //Teste realizar logout
     it('Poder fazer logout', () => {
         cy.login();
-        cy.get('[data-cy=button-sair]').click();
+        cy.get('[data-cy=buttonSair]').click();
     });
 
+    //Teste cadastrar novo caso
     it('Poder cadastrar novos casos', () => {
         cy.login();
 
-        cy.get('[data-cy=button-novo-caso]').click();
-        cy.get('[data-cy=titulo-do-caso]').type('Animal abandonado.');
+        cy.get('[data-cy=buttonNovoCaso]').click();
+        cy.get('[data-cy=tituloCaso]').type('Animal abandonado.');
         cy.get('[data-cy=descricao]').type('Animal jogado na rua, precisa ser adotado.');
-        cy.get('[data-cy=valor-em-reais]').type(100);
+        cy.get('[data-cy=valorReais]').type(100);
 
         //POST 200 /incidents  // TIRAR O S DO  newIncident
         cy.route('POST', '**/incidents').as('newIncident');
         
-        cy.get('[data-cy=button-cadastrar]').click();
+        cy.get('[data-cy=buttonCadastrar]').click();
 
         cy.wait('@newIncident').then((xhr) => {
             expect(xhr.status).to.eq(200);
@@ -53,7 +53,7 @@ describe('Ongs', ()=>{
         // delete 204 http://localhost:3333/incidents/71
         cy.route('DELETE', '**/incidents/*').as('deleteIncidents');
 
-        cy.get('[data-cy=button-deletar-caso]').click();
+        cy.get('[data-cy=buttonDeletarCaso]').click();
 
         cy.wait('@deleteIncidents').then((xhr) => {
             expect(xhr.status).to.eq(204);

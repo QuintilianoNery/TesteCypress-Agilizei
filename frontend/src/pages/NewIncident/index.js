@@ -62,7 +62,7 @@ export default function NewIncident() {
         <input 
           placeholder="Título do caso"
           value={title}
-          data-cy="titulo-do-caso"
+          data-cy="tituloCaso"
           onChange={e => setTitle(e.target.value)}
         />
         <textarea 
@@ -74,11 +74,11 @@ export default function NewIncident() {
         <input 
           placeholder="Valor em reais"
           value={value}
-          data-cy="valor-em-reais"
+          data-cy="valorReais"
           onChange={e => setValue(e.target.value)}
         />
 
-        <button data-cy="button-cadastrar" onClick={handleNewIncident} className="button" type="submit" >Cadastrar</button>
+        <button data-cy="buttonCadastrar" onClick={handleNewIncident} className="button" type="submit" >Cadastrar</button>
       </form>
     </div>
   </div>
