@@ -2,6 +2,8 @@
 //Importar metodos
 import Logon from '../support/Pages/Logon';
 import Register from '../support/Register';
+import Profile from '../support/Pages/Profile';
+import NewIncident from '../support/Pages/NewIncident';
 
 //Teste realizar cadastro de nova Ong
 describe('Ongs', ()=>{
@@ -21,34 +23,25 @@ describe('Ongs', ()=>{
     //Teste realizar logout
     it('Poder fazer logout', () => {
         cy.login();
-        cy.get('[data-cy=buttonSair]').click();
+        Profile.clicarNoBotaoSair;
     });
 
     //Teste cadastrar novo caso
     it('Poder cadastrar novos casos', () => {
         cy.login();
-
-        cy.get('[data-cy=buttonNovoCaso]').click();
-        cy.get('[data-cy=tituloCaso]').type('Animal abandonado.');
-        cy.get('[data-cy=descricao]').type('Animal jogado na rua, precisa ser adotado.');
-        cy.get('[data-cy=valorReais]').type(100);
-
-        //POST 200 /incidents  // TIRAR O S DO  newIncident
-        cy.route('POST', '**/incidents').as('newIncident');
-        
-        cy.get('[data-cy=buttonCadastrar]').click();
-
-        cy.wait('@newIncident').then((xhr) => {
-            expect(xhr.status).to.eq(200);
-            expect(xhr.response.body).has.property('id');
-            expect(xhr.response.body.id).is.not.null;
-        })
-
+        Profile.clicarNoBotaoCadastrarNovosCasos;
+        NewIncident.preenherCadastroDeCaso;
+        NewIncident.validarCadastroDeCaso;   
     });
 
+    //Teste excluir um caso
     it('Poder excluir um caso', () => {
         cy.createNewIncident();
         cy.login();
+
+
+        //######## parei no ultimo teste 43:35
+
 
         // delete 204 http://localhost:3333/incidents/71
         cy.route('DELETE', '**/incidents/*').as('deleteIncidents');
