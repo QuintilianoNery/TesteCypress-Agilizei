@@ -29,29 +29,17 @@ describe('Ongs', ()=>{
     //Teste cadastrar novo caso
     it('Poder cadastrar novos casos', () => {
         cy.login();
-        Profile.clicarNoBotaoCadastrarNovosCasos;
-        NewIncident.preenherCadastroDeCaso;
-        NewIncident.validarCadastroDeCaso;   
+        Profile.clicarNoBotaoCadastrarNovosCasos();
+        NewIncident.preenherCadastroDeCaso();
+        NewIncident.validarCadastroDeCaso();   
     });
 
     //Teste excluir um caso
     it('Poder excluir um caso', () => {
         cy.createNewIncident();
         cy.login();
-
-
-        //######## parei no ultimo teste 43:35
-
-
-        // delete 204 http://localhost:3333/incidents/71
-        cy.route('DELETE', '**/incidents/*').as('deleteIncidents');
-
-        cy.get('[data-cy=buttonDeletarCaso]').click();
-
-        cy.wait('@deleteIncidents').then((xhr) => {
-            expect(xhr.status).to.eq(204);
-            expect(xhr.response.body).to.be.empty;
-        })
+        Profile.clicarBotaoExcluirCaso();
+        Profile.validarExclusaoCasoComSucesso();        
     });
 
 })
@@ -60,11 +48,7 @@ describe('Ongs', ()=>{
 //data-cy="name"
 //serve para identificar como uma chave especifica para o nome do campo, uma variável global para identificar o campo para o Cypres
 
-
-
 //Aula 3 - Page Objects
 //Pagina 
 //  ações
 //  elementos
-
-//Teste de login
