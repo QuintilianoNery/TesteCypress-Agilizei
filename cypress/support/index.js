@@ -18,7 +18,9 @@ import './commands'
 
 
 
+//####17:39 - parei aula 4
 
+/* 
 
 import '@shelex/cypress-allure-plugin';
 require('@shelex/cypress-allure-plugin'); 
