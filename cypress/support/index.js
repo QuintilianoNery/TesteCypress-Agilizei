@@ -41,3 +41,9 @@ beforeEach(() => {
         //Esse comando personalizado foi criado no arquivo commands.js
         cy.createOng();
 });
+
+//npx cypress run --config video=false --env allure=true
+//npx - baixa temp 
+//cypress run  - executa os testes no modo hreadless / sem interface
+//--config video=false - Não precisa salvar o vídeo
+//--env allure=true - gerar relatório allure
