@@ -16,24 +16,10 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-
-
-//####17:39 - parei aula 4
-
-/* 
-
+//Configurações para geração dos relatórios com Allure
 import '@shelex/cypress-allure-plugin';
-require('@shelex/cypress-allure-plugin'); 
+require('@shelex/cypress-allure-plugin');
 
-
-
-
-
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-
-// ***********************************************************
 
 //coisas para semre executadas antes de cada teste
 beforeEach(() => {

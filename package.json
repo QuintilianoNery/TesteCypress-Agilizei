@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cy:run": "cypress run --config video=true --env allure=trueideo=true --env allure=true --browser chrome",
+    "allure:generate":"allure generate allure-results",
+    "allure:open":"allure open allure-report",
+    
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open"
   },

@@ -82,6 +82,28 @@ Obs: essa pasta deve estar junto da pasta do projeto do cypress
   #### Iniciar o Cypress
 npm run cy:open
 
+#### Configuração do relatório com Allure
+https://www.npmjs.com/package/allure-commandline
+npm install -g allure-commandline --save-dev
+
+https://www.npmjs.com/package/@shelex/cypress-allure-plugin
+npm i -D @shelex/cypress-allure-plugin
+https://www.npmjs.com/package/@shelex/cypress-allure-plugin#configuration
+
+npx cypress run --config video=false --env allure=true --browser chrome
+
+Comando para iniciar o relatório
+allure generate allure-results
+
+
+abrir o relatório no navegador
+
+allure open allure-report
+
+
+
+
+
 ####
 Link da aplicação
 https://teste-cypress-agilizei.vercel.app/
