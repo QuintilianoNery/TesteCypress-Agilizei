@@ -1,12 +1,12 @@
 {
-  "uid" : "5826dc3f0af8d8ee",
+  "uid" : "199240b8d087f2bb",
   "name" : "Poder cadastrar novos casos",
   "fullName" : "Poder cadastrar novos casos",
   "historyId" : "62f6c03c29ee50040f1ff3c6abbbb9ee",
   "time" : {
-    "start" : 1607278899779,
-    "stop" : 1607278903511,
-    "duration" : 3732
+    "start" : 1607280636130,
+    "stop" : 1607280639634,
+    "duration" : 3504
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,765 +17,780 @@
     "steps" : [ {
       "name" : "server",
       "time" : {
-        "start" : 1607278889188,
-        "stop" : 1607278889201,
-        "duration" : 13
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "createOng",
-      "time" : {
-        "start" : 1607278889201,
-        "stop" : 1607278889517,
-        "duration" : 316
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "request (\"[object Object]\")",
-        "time" : {
-          "start" : 1607278889203,
-          "stop" : 1607278889495,
-          "duration" : 292
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "log (\"eb7b298a\")",
-        "time" : {
-          "start" : 1607278889510,
-          "stop" : 1607278889516,
-          "duration" : 6
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "expected **eb7b298a** not to be null assert",
-        "time" : {
-          "start" : 1607278889516,
-          "stop" : 1607278889517,
-          "duration" : 1
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 3,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 5,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  }, {
-    "time" : { },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "server",
-      "time" : {
-        "start" : 1607278897449,
-        "stop" : 1607278897450,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "createOng",
-      "time" : {
-        "start" : 1607278897450,
-        "stop" : 1607278897811,
-        "duration" : 361
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "request (\"[object Object]\")",
-        "time" : {
-          "start" : 1607278897451,
-          "stop" : 1607278897802,
-          "duration" : 351
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "log (\"9217ff39\")",
-        "time" : {
-          "start" : 1607278897807,
-          "stop" : 1607278897811,
-          "duration" : 4
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "expected **9217ff39** not to be null assert",
-        "time" : {
-          "start" : 1607278897811,
-          "stop" : 1607278897811,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 3,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 5,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  }, {
-    "time" : { },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "server",
-      "time" : {
-        "start" : 1607278899009,
-        "stop" : 1607278899011,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "createOng",
-      "time" : {
-        "start" : 1607278899011,
-        "stop" : 1607278899303,
-        "duration" : 292
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "request (\"[object Object]\")",
-        "time" : {
-          "start" : 1607278899014,
-          "stop" : 1607278899290,
-          "duration" : 276
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "log (\"59c0b898\")",
-        "time" : {
-          "start" : 1607278899299,
-          "stop" : 1607278899303,
-          "duration" : 4
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "expected **59c0b898** not to be null assert",
-        "time" : {
-          "start" : 1607278899303,
-          "stop" : 1607278899303,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 3,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 5,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  }, {
-    "time" : { },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "server",
-      "time" : {
-        "start" : 1607278899851,
-        "stop" : 1607278899852,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "createOng",
-      "time" : {
-        "start" : 1607278899852,
-        "stop" : 1607278900353,
-        "duration" : 501
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "request (\"[object Object]\")",
-        "time" : {
-          "start" : 1607278899853,
-          "stop" : 1607278900344,
-          "duration" : 491
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "log (\"b7dbb840\")",
-        "time" : {
-          "start" : 1607278900350,
-          "stop" : 1607278900353,
-          "duration" : 3
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "expected **b7dbb840** not to be null assert",
-        "time" : {
-          "start" : 1607278900353,
-          "stop" : 1607278900353,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 3,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 5,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  }, {
-    "time" : { },
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "server",
-      "time" : {
-        "start" : 1607278903834,
-        "stop" : 1607278903835,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "createOng",
-      "time" : {
-        "start" : 1607278903835,
-        "stop" : 1607278903991,
-        "duration" : 156
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "request (\"[object Object]\")",
-        "time" : {
-          "start" : 1607278903835,
-          "stop" : 1607278903981,
-          "duration" : 146
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "log (\"dacf6507\")",
-        "time" : {
-          "start" : 1607278903986,
-          "stop" : 1607278903991,
-          "duration" : 5
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "expected **dacf6507** not to be null assert",
-        "time" : {
-          "start" : 1607278903991,
-          "stop" : 1607278903991,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 3,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    } ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 5,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  } ],
-  "testStage" : {
-    "status" : "passed",
-    "steps" : [ {
-      "name" : "login",
-      "time" : {
-        "start" : 1607278900362,
-        "stop" : 1607278900660,
-        "duration" : 298
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "visit (\"http://localhost:3000/profile\"; \"[object Object]\")",
-        "time" : {
-          "start" : 1607278900363,
-          "stop" : 1607278900660,
-          "duration" : 297
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "GET http://localhost:3333/profile",
-        "time" : {
-          "start" : 1607278900660,
-          "stop" : 1607278900660,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "get (\"[data-cy=buttonNovoCaso]\")",
-      "time" : {
-        "start" : 1607278900660,
-        "stop" : 1607278900679,
-        "duration" : 19
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "click",
-      "time" : {
-        "start" : 1607278900679,
-        "stop" : 1607278900825,
-        "duration" : 146
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "http://localhost:3000/incidents/new new url",
-      "time" : {
-        "start" : 1607278900825,
-        "stop" : 1607278900825,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "get (\"[data-cy=tituloCaso]\")",
-      "time" : {
-        "start" : 1607278900825,
-        "stop" : 1607278900842,
-        "duration" : 17
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "type (\"Animal abandonado.\")",
-      "time" : {
-        "start" : 1607278900842,
-        "stop" : 1607278901468,
-        "duration" : 626
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "get (\"[data-cy=descricao]\")",
-      "time" : {
-        "start" : 1607278901468,
-        "stop" : 1607278901482,
-        "duration" : 14
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "type (\"Animal jogado na rua, precisa ser adotado.\")",
-      "time" : {
-        "start" : 1607278901482,
-        "stop" : 1607278902780,
-        "duration" : 1298
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "get (\"[data-cy=valorReais]\")",
-      "time" : {
-        "start" : 1607278902781,
-        "stop" : 1607278902804,
-        "duration" : 23
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "type (\"100\")",
-      "time" : {
-        "start" : 1607278902804,
-        "stop" : 1607278903057,
-        "duration" : 253
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "route (\"POST\"; \"**/incidents\")",
-      "time" : {
-        "start" : 1607278903057,
-        "stop" : 1607278903062,
+        "start" : 1607280613815,
+        "stop" : 1607280613820,
         "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "as (\"newIncident\")",
+      "name" : "createOng",
       "time" : {
-        "start" : 1607278903062,
-        "stop" : 1607278903065,
-        "duration" : 3
+        "start" : 1607280613820,
+        "stop" : 1607280614643,
+        "duration" : 823
       },
       "status" : "passed",
-      "steps" : [ ],
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1607280613821,
+          "stop" : 1607280614632,
+          "duration" : 811
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "log (\"059e574f\")",
+        "time" : {
+          "start" : 1607280614641,
+          "stop" : 1607280614643,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expected **059e574f** not to be null assert",
+        "time" : {
+          "start" : 1607280614643,
+          "stop" : 1607280614643,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "get (\"[data-cy=buttonCadastrar]\")",
-      "time" : {
-        "start" : 1607278903065,
-        "stop" : 1607278903091,
-        "duration" : 26
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "click",
-      "time" : {
-        "start" : 1607278903091,
-        "stop" : 1607278903325,
-        "duration" : 234
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "POST http://localhost:3333/incidents",
-      "time" : {
-        "start" : 1607278903325,
-        "stop" : 1607278903325,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "wait (\"@newIncident\")",
-      "time" : {
-        "start" : 1607278903325,
-        "stop" : 1607278903467,
-        "duration" : 142
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "http://localhost:3000/profile new url",
-      "time" : {
-        "start" : 1607278903466,
-        "stop" : 1607278903466,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "expected **{ id: 333 }** to have property **id** assert",
-      "time" : {
-        "start" : 1607278903509,
-        "stop" : 1607278903509,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "expected **333** not to be null assert",
-      "time" : {
-        "start" : 1607278903509,
-        "stop" : 1607278903509,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "expected **200** to equal **200** assert",
-      "time" : {
-        "start" : 1607278903510,
-        "stop" : 1607278903510,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 5,
     "hasContent" : true,
-    "stepsCount" : 22,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "server",
+      "time" : {
+        "start" : 1607280633214,
+        "stop" : 1607280633219,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "createOng",
+      "time" : {
+        "start" : 1607280633219,
+        "stop" : 1607280633426,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1607280633221,
+          "stop" : 1607280633414,
+          "duration" : 193
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "log (\"07b95402\")",
+        "time" : {
+          "start" : 1607280633422,
+          "stop" : 1607280633425,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expected **07b95402** not to be null assert",
+        "time" : {
+          "start" : 1607280633426,
+          "stop" : 1607280633426,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "server",
+      "time" : {
+        "start" : 1607280635585,
+        "stop" : 1607280635587,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "createOng",
+      "time" : {
+        "start" : 1607280635587,
+        "stop" : 1607280635775,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1607280635588,
+          "stop" : 1607280635764,
+          "duration" : 176
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "log (\"d33444ae\")",
+        "time" : {
+          "start" : 1607280635771,
+          "stop" : 1607280635774,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expected **d33444ae** not to be null assert",
+        "time" : {
+          "start" : 1607280635775,
+          "stop" : 1607280635775,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "server",
+      "time" : {
+        "start" : 1607280636172,
+        "stop" : 1607280636174,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "createOng",
+      "time" : {
+        "start" : 1607280636174,
+        "stop" : 1607280636398,
+        "duration" : 224
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1607280636175,
+          "stop" : 1607280636389,
+          "duration" : 214
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "log (\"4acce1bf\")",
+        "time" : {
+          "start" : 1607280636394,
+          "stop" : 1607280636397,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expected **4acce1bf** not to be null assert",
+        "time" : {
+          "start" : 1607280636398,
+          "stop" : 1607280636398,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "server",
+      "time" : {
+        "start" : 1607280639818,
+        "stop" : 1607280639819,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "createOng",
+      "time" : {
+        "start" : 1607280639819,
+        "stop" : 1607280640213,
+        "duration" : 394
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1607280639820,
+          "stop" : 1607280640207,
+          "duration" : 387
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "log (\"8a884617\")",
+        "time" : {
+          "start" : 1607280640211,
+          "stop" : 1607280640213,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expected **8a884617** not to be null assert",
+        "time" : {
+          "start" : 1607280640213,
+          "stop" : 1607280640213,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1607280636412,
+        "stop" : 1607280636776,
+        "duration" : 364
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit (\"http://localhost:3000/profile\"; \"[object Object]\")",
+        "time" : {
+          "start" : 1607280636413,
+          "stop" : 1607280636776,
+          "duration" : 363
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "GET http://localhost:3333/profile",
+        "time" : {
+          "start" : 1607280636776,
+          "stop" : 1607280636776,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get (\"[data-cy=buttonNovoCaso]\")",
+      "time" : {
+        "start" : 1607280636776,
+        "stop" : 1607280636814,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1607280636814,
+        "stop" : 1607280637014,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "http://localhost:3000/incidents/new new url",
+      "time" : {
+        "start" : 1607280637013,
+        "stop" : 1607280637013,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get (\"[data-cy=tituloCaso]\")",
+      "time" : {
+        "start" : 1607280637014,
+        "stop" : 1607280637033,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "type (\"Animal abandonado.\")",
+      "time" : {
+        "start" : 1607280637033,
+        "stop" : 1607280637671,
+        "duration" : 638
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get (\"[data-cy=descricao]\")",
+      "time" : {
+        "start" : 1607280637671,
+        "stop" : 1607280637693,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "type (\"Animal jogado na rua, precisa ser adotado.\")",
+      "time" : {
+        "start" : 1607280637693,
+        "stop" : 1607280638918,
+        "duration" : 1225
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get (\"[data-cy=valorReais]\")",
+      "time" : {
+        "start" : 1607280638918,
+        "stop" : 1607280638931,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "type (\"100\")",
+      "time" : {
+        "start" : 1607280638931,
+        "stop" : 1607280639185,
+        "duration" : 254
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "route (\"POST\"; \"**/incidents\")",
+      "time" : {
+        "start" : 1607280639185,
+        "stop" : 1607280639189,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "as (\"newIncident\")",
+      "time" : {
+        "start" : 1607280639189,
+        "stop" : 1607280639190,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get (\"[data-cy=buttonCadastrar]\")",
+      "time" : {
+        "start" : 1607280639190,
+        "stop" : 1607280639207,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1607280639207,
+        "stop" : 1607280639322,
+        "duration" : 115
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "POST http://localhost:3333/incidents",
+      "time" : {
+        "start" : 1607280639322,
+        "stop" : 1607280639322,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "wait (\"@newIncident\")",
+      "time" : {
+        "start" : 1607280639322,
+        "stop" : 1607280639609,
+        "duration" : 287
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "http://localhost:3000/profile new url",
+      "time" : {
+        "start" : 1607280639608,
+        "stop" : 1607280639608,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "GET http://localhost:3333/profile",
+      "time" : {
+        "start" : 1607280639609,
+        "stop" : 1607280639609,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "expected **{ id: 335 }** to have property **id** assert",
+      "time" : {
+        "start" : 1607280639630,
+        "stop" : 1607280639630,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "expected **335** not to be null assert",
+      "time" : {
+        "start" : 1607280639631,
+        "stop" : 1607280639631,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1607280639631,
+        "stop" : 1607280639631,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -795,6 +810,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5826dc3f0af8d8ee.json",
+  "source" : "199240b8d087f2bb.json",
   "parameterValues" : [ ]
 }

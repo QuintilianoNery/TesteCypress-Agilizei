@@ -100,6 +100,9 @@ abrir o relatório no navegador
 
 allure open allure-report
 
+Ou após configurar, apenas 
+
+npm run test
 
 
 
