@@ -60,6 +60,19 @@ O conteúdo dos vídeos é organizado por branches, conforme a lista abaixo:
 #### Baixe o projeto no Github, de preferência na branch do Vídeo 1:
 - Branch do vídeo 1: `https://github.com/samlucax/youtube-cypress/tree/video1`
 
+- Na pasta do projeto
+npm init -yes
+
+- Instalar uma nova de dependência do Cypress npm
+npm install -D cypress@6.0
+
+- Criar estrutura de pastas cypress
+dentro de \node_modules\.bin\cypress open
+cypress open
+
+- Iniciar o Cypress
+npm run cy:open
+
 #### Instale e suba nossa *cobaia* localmente
 1.Acessar o diretório backend, instalar as dependências e iniciar a api:
   - `cd backend` 
@@ -78,9 +91,6 @@ Obs: essa pasta deve estar junto da pasta do projeto do cypress
 3.Acessar o diretório root do projeto (que tem a pasta Cypress), instalar as dependências e abrir o Cypress Runner:
   - `npm install`
   - `./node_modules/.bin/cypress open`
-
-  #### Iniciar o Cypress
-npm run cy:open
 
 #### Configuração do relatório com Allure
 https://www.npmjs.com/package/allure-commandline
