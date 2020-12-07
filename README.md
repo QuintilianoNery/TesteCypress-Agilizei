@@ -64,10 +64,10 @@ O conteúdo dos vídeos é organizado por branches, conforme a lista abaixo:
 npm init -yes
 
 - Instalar uma nova de dependência do Cypress npm
-npm install -D cypress@6.0
+npm install -D cypress
 
 - Criar estrutura de pastas cypress
-cypress open
+npx cypress open
 
 - Iniciar o Cypress
 npm run cy:open
