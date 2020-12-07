@@ -61,16 +61,16 @@ O conteúdo dos vídeos é organizado por branches, conforme a lista abaixo:
 - Branch do vídeo 1: `https://github.com/samlucax/youtube-cypress/tree/video1`
 
 - Na pasta do projeto
-npm init -yes
+`npm init -yes`
 
 - Instalar uma nova de dependência do Cypress npm
-npm install -D cypress
+`npm install -D cypress`
 
 - Criar estrutura de pastas cypress
-npx cypress open
+`npx cypress open`
 
 - Iniciar o Cypress
-npm run cy:open
+`npm run cy:open`
 
 #### Instale e suba nossa *cobaia* localmente
 1.Acessar o diretório backend, instalar as dependências e iniciar a api:
