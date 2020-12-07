@@ -67,7 +67,7 @@ npm init -yes
 npm install -D cypress@6.0
 
 - Criar estrutura de pastas cypress
-dentro de \node_modules\.bin\cypress open
+dentro de \node_modules \.bin\cypress open
 cypress open
 
 - Iniciar o Cypress
