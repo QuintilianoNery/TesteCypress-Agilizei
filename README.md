@@ -3,7 +3,7 @@
 
 ------------
 
-[![HitCount](http://hits.dwyl.com/samlucax/youtube-cypress.svg)](http://hits.dwyl.com/samlucax/youtube-cypress)
+[![Agilizei](https://agilizei.com/)](https://agilizei.com/)
 
 <p align="center"><img src="youtube-cypress.png" width="100%"/></p>
 
