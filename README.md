@@ -2,8 +2,10 @@
 <p align="center">Um projeto para aprender sobre o Cypress no Youtube</p>
 
 ------------
+OBS.: Todo conteúdo e código principal da aplicação com direitos reservados ao [Samuel Lucas](https://github.com/samlucax) processor e criado do curso. Eu apenas copiei o código para estudos com Cypress
 
-[![Agilizei](https://agilizei.com/)](https://agilizei.com/)
+
+[Agilizei](https://agilizei.com/)
 
 <p align="center"><img src="youtube-cypress.png" width="100%"/></p>
 
